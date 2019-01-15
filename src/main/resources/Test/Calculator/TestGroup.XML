@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tests>
+    <Add>
+        <Test>
+            <Input1>0,0,1</Input1> <!--  左操作数  -->
+            <Input2>0,0,-1</Input2> <!--  右操作数  -->
+            <Validate>0,0,0</Validate> <!--  校验  -->
+        </Test>
+        <Test>
+            <Input1>0,0,0,0,1</Input1>
+            <Input2>1,0,0,0,0</Input2>
+            <Validate>1,0,0,0,1</Validate>
+        </Test>
+        <Test>
+            <Input1>0,0,-1</Input1>
+            <Input2>1,0,0,0,0</Input2>
+            <Validate>1,0,0,-1,0</Validate>
+        </Test>
+    </Add>
+    <Multi>
+        <Test>
+            <Input1>0,0,1</Input1>
+            <Input2>0,0,-1</Input2>
+            <Validate>0,0,0,0,-1</Validate>
+        </Test>
+        <Test>
+            <Input1>0,0,0,0,1</Input1>
+            <Input2>1,0,0,0,0</Input2>
+            <Validate>0,0,0,0,1,0,0,0,0</Validate>
+        </Test>
+        <Test>
+            <Input1>0,0,0,0,1</Input1>
+            <Input2>0,0,-1</Input2>
+            <Validate>0,0,0,0,0,0,-1</Validate>
+        </Test>
+    </Multi>
+</Tests>
